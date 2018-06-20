@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .ul {
+            width: 100%;
+        }
+
+        .ul li {
+            height: 560px;
+            width: 100%;
+            background-color: pink;
+            border-bottom: 30px solid #fff;
+        }
+
+        .pos {
+            position: fixed;
+            width: 100px;
+            right: 0;
+            top: 0;
+        }
+
+        .pos li {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul">
+        <li class="scroll-by-01">
+            <span>1楼</span>
+            <div></div>
+        </li>
+        <li class="scroll-by-02">
+            <span>2楼</span>
+            <div></div>
+        </li>
+        <li class="scroll-by-03">
+            <span>3楼</span>
+            <div></div>
+        </li>
+        <li class="scroll-by-04">
+            <span>4楼</span>
+            <div></div>
+        </li>
+        <li class="scroll-by-05">
+            <span>5楼</span>
+            <div></div>
+        </li>
+        <li class="scroll-by-06">
+            <span>6楼</span>
+            <div></div>
+        </li>
+    </ul>
+    <ul class="pos">
+        <li class="scroll-to-01">1楼</li>
+        <li class="scroll-to-02">2楼</li>
+        <li class="scroll-to-03">3楼</li>
+        <li class="scroll-to-04">4楼</li>
+        <li class="scroll-to-05">5楼</li>
+        <li class="scroll-to-06">6楼</li>
+        <li class="toTop">
+            返回顶部
+        </li>
+    </ul>
+    <div style="height: 1000px;"></div>
+</body>
+
+</html>
+<script src="lib/js/jquery-1.8.3.min.js"></script>
+<script src="js/cj99.min.js"></script>
+<script>
+    /*!
+     * click 为to
+     * scroll为by
+     * 
+     */
+    $(function() {
+        cj99.scroll({
+            floor: [{
+                    to: 'scroll-to-01',
+                    by: 'scroll-by-01'
+                },
+                {
+                    to: 'scroll-to-02',
+                    by: 'scroll-by-02'
+                },
+                {
+                    to: 'scroll-to-03',
+                    by: 'scroll-by-03'
+                },
+                {
+                    to: 'scroll-to-04',
+                    by: 'scroll-by-04'
+                },
+                {
+                    to: 'scroll-to-05',
+                    by: 'scroll-by-05'
+                },
+                {
+                    to: 'scroll-to-06',
+                    by: 'scroll-by-06'
+                }
+            ],
+            top: 'toTop', // 可选参数
+            active: 'active'
+        })
+    })
+</script>

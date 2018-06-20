@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>riverTab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav .active {
+            color: red;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+        }
+
+        .nav-item {
+            line-height: 30px;
+            background-color: orange;
+            color: #fff;
+            text-align: center;
+            width: 25%;
+            float: left;
+            list-style: none;
+        }
+
+        .nav-section {
+            width: 100%;
+            height: 400px;
+            background-color: #ccc;
+            float: left;
+        }
+
+        .section-item {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item ">tab01</li>
+        <li class="nav-item ">tab02</li>
+        <li class="nav-item active">tab03</li>
+        <li class="nav-item ">tab04</li>
+    </ul>
+    <div class="nav-section">
+        <div class="section-item" style="display: block;">
+            <p>tab01</p>
+            <p>JavaScript的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
+                1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。 1994年12月，Navigator发布了1.0版，市场份额一举超过90%。
+            </p>
+        </div>
+        <div class="section-item" style="display: none;">
+            <p>tab02</p>
+            <p>JavaScript的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
+                1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。 1994年12月，Navigator发布了1.0版，市场份额一举超过90%。
+            </p>
+        </div>
+        <div class="section-item" style="display: none;">
+            <p>tab03</p>
+            <p>JavaScript的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
+                1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。 1994年12月，Navigator发布了1.0版，市场份额一举超过90%。
+            </p>
+        </div>
+        <div class="section-item" style="display: none;">
+            <p>tab04</p>
+            <p>JavaScript的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
+                1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。 1994年12月，Navigator发布了1.0版，市场份额一举超过90%。
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="lib/js/jquery-1.8.3.min.js"></script>
+<script src="js/cj99.min.js"></script>
+<script>
+    /**!
+     * arguments[0] 点击目标对象
+     * arguments[1] 当前目标对象类名名
+     * arguments[3] toggle切换目标对象
+     * arguments[4] callback 可选参数
+     */
+    cj99.toggle($('.nav-item'), 'active', $('.section-item'), function(th) {
+        // console.log(th)
+    })
+</script>
